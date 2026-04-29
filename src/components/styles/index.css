@@ -1,0 +1,66 @@
+:root {
+            --primary: #0066cc;
+            --primary-dark: #0052a3;
+            --secondary: #28a745;
+            --accent: #4fc3f7;
+            --dark: #003366;
+            --light: #f8fafc;
+            --gray: #666;
+            --white: #ffffff;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+
+         @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .search-box {
+                grid-template-columns: 1fr;
+            }
+            .dashboard-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .doctor-details {
+                flex-direction: column;
+                text-align: center;
+            }
+            .modal-content {
+                padding: 30px 20px;
+            }
+            .consultation-types {
+                flex-direction: column;
+            }
+            .video-controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }

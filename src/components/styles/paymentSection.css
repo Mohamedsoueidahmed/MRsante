@@ -1,0 +1,43 @@
+ .payment-section {
+            padding: 60px 0;
+            background: #f8fafc;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .payment-method {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .payment-method:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .payment-method.selected {
+            border-color: var(--secondary);
+            background: rgba(40, 167, 69, 0.05);
+        }
+
+        .payment-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .payment-method h4 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }

@@ -1,0 +1,41 @@
+ .orange-money, .wave-money {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8c00 100%);
+            color: white;
+        }
+
+        .wave-money {
+            background: linear-gradient(135deg, #2d5aa0 0%, #4a7bc8 100%);
+        }
+
+        .payment-method.orange-money .payment-icon,
+        .payment-method.wave-money .payment-icon {
+            color: white;
+        }
+
+        .payment-method.orange-money h4,
+        .payment-method.wave-money h4 {
+            color: white;
+        }
+
+        /* Features */
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
